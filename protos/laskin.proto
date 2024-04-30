@@ -4,6 +4,8 @@ package laskin;
 
 service Laskin {
     rpc LaskeYhteen (LaskuKysely) returns (LaskuVastaus) {}
+    rpc Kertolasku (LaskuKysely) returns (LaskuVastaus) {}
+    rpc Miinuslasku (LaskuKysely) returns (LaskuVastaus) {}
 }
 
 message LaskuKysely {
