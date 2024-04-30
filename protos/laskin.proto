@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package laskin;
+
+service Laskin {
+    rpc LaskeYhteen (LaskuKysely) returns (LaskuVastaus) {}
+}
+
+message LaskuKysely {
+    int32 eka = 1;
+    int32 toka = 2;
+}
+
+message LaskuVastaus {
+    int32 tulos = 1;
+}
